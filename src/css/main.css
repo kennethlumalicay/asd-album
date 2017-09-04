@@ -3,7 +3,7 @@ body, html {
 	margin: 0;
 	padding: 0;
 	font-family: 'Encode Sans', sans-serif;
-	font-size: 1rem;
+	font-size: 1em;
 }
 a {
 	color: black;
@@ -34,7 +34,7 @@ a:visited {
 }
 #nav > a {
 	color: black;
-	font-size: 1.4rem;
+	font-size: 1.4em;
 	padding: 10px 20px 10px 40px;
 	text-align: right;
 	transition: all 0.5s ease-in-out;
@@ -49,12 +49,13 @@ a:visited {
 	background-color: rgba(0,100,0,0.05);
 }
 #footer {
-	font-size: 1rem;
+	font-size: 1em;
 	display: flex;
 	margin-top: auto;
 	padding: 10px;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
 }
 #footer > span:not(:last-child) {
 	color: rgba(100,100,100,1);
@@ -75,7 +76,7 @@ a:visited {
 	align-items: center;
 }
 #tiles > h1 {
-	font-size: 3rem;
+	font-size: 3em;
 	margin: 0;
 }
 .img-tiles {
@@ -97,15 +98,8 @@ a:visited {
 }
 .img > img {
 	color: rgba(240,0,0,1);
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	transition: all 0.5s ease-in-out;
-}
-@media (orientation: landscape) {
-	.img > img {max-height: 300px;}
-}
-@media (orientation: portrait) {
-	.img {max-width: 90%;}
-	.img > img {max-width: 99%;}
 }
 .img > img:hover {
 	transform: scale(1.1);
@@ -115,14 +109,14 @@ a:visited {
 	border: none;
 	outline: none;
 	color: rgba(155,0,0,1);
-	font-size: 0.8rem;
+	font-size: 1em;
 }
 .img > a {
-	font-size: 0.8rem;
+	font-size: 1em;
 }
 .img > h2 {
 	font-weight: 500;
-	font-size: 1.2rem;
+	font-size: 1.3em;
 }
 /* -- END OF TILES */
 /* -- NEW PIC */
@@ -133,11 +127,11 @@ a:visited {
 	justify-content: center;
 }
 #new-pic > h1 {
-	font-size: 3rem;
+	font-size: 3em;
 	margin: 20px;
 }
 #new-pic > input {
-	font-size: 2rem;
+	font-size: 2em;
 	border: 2px solid black;
 	border-radius: 5px 10px;
 	outline: none;
@@ -146,7 +140,7 @@ a:visited {
 }
 #new-pic > button {
 	background-color: transparent;
-	font-size: 2rem;
+	font-size: 2em;
 	border: 2px solid black;
 	border-radius: 10px;
 	padding: 5px 10px;
@@ -158,6 +152,7 @@ a:visited {
 	cursor: pointer;
 }
 /* -- END OF NEW PIC */
+/* END OF CONTENT */
 /* ANIMATION */
 .ani-show { animation: animate-in 1s }
 @keyframes animate-in {
@@ -165,3 +160,13 @@ a:visited {
   to {opacity: 1}
 }
 /* END OF ANIMATION */
+/* MEDIA QUERIES */
+@media (orientation: landscape) {
+	.img > img {max-height: 300px;}
+}
+@media (orientation: portrait) {
+	.img {max-width: 90%;}
+	.img > img {max-width: 99%;}
+	body {font-size: 20px;}
+}
+/* END OF MEDIA QUERIES */
