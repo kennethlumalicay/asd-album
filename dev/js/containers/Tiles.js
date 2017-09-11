@@ -25,7 +25,7 @@ class Tiles extends Component {
 		  	<div className='img-tiles' ref='imgTiles'>
 					{list.length ? list.map((e,i) => 
 						<div className='img' key={i}>
-							<h2 title={e.title}>{e.title.length < 16
+							<h2 title={e.title}>{e.title.length < 19
 								? e.title
 								: e.title.substring(0,16).trim() + '...'}</h2>
 							<img src={e.url} alt={e.title} />

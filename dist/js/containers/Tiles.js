@@ -77,7 +77,7 @@ var Tiles = (_dec = (0, _reactRedux.connect)(function (state) {
 							_react2.default.createElement(
 								'h2',
 								{ title: e.title },
-								e.title.length < 16 ? e.title : e.title.substring(0, 16).trim() + '...'
+								e.title.length < 19 ? e.title : e.title.substring(0, 16).trim() + '...'
 							),
 							_react2.default.createElement('img', { src: e.url, alt: e.title }),
 							user === e.user ? _react2.default.createElement(
